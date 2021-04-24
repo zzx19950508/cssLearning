@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  1.BFC是什么
+  从理论上讲，被包含在父元素里面的元素是不会影响到父元素旁边的元素，但是并发如此;
+  所以有没有什么办法能让里面的元素和外部真正隔离开呢。BFC就是用于解决这个问题,BFC又叫做块级格式上下文，
+  形成独立的渲染区域，让内部的子元素不会影响外界布局。但是如何形成BFC
+
+  2.形成BFC常见的操作
+  浮动操作  float 不是 none
+  绝对定位元素 position 是 absolute 或 fixed
+  块级元素 overflow 不是 visible
+  flex 元素
+  inline-block 元素
+
+  3.BFC解决什么问题
+  触发了BFC的容器就是页面上的一个完全隔离开的容器，容器内的元素不会影响到外面的元素。
+  所以触发了BFC的元素，不得不让浮动的子元素也参与进来。

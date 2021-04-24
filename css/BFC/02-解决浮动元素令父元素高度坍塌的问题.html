@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .child{
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      float: left;
+    }
+    .Box1{
+      border: 1px solid brown;
+      overflow: hidden;
+    }
+    .Box2{
+      border: 1px solid blueviolet;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  假设一个父元素里有几个子元素，当几个子元素都设为float的时候，会发生高度坍塌。
+  这是因为浮动的子元素脱离了文档流，父元素检测不到它们，所以无法被撑开，
+  为了保证容器中的元素绝对不会影响到外面的元素的规则，
+  触发了BFC的元素，在计算自己的高度时，不得不让浮动的子元素也参与进来
+  -->
+  <div class="Box1">
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+  <div class="Box2"></div>
+</body>
+</html>

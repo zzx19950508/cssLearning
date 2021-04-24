@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+  <style>
+    #p1{
+      margin-bottom: 20px;
+    }
+    #p2{
+      margin-top: 20px;
+    }
+    #p1F{
+      overflow: hidden;
+    }
+  </style>
+<body>
+  <!--针对兄弟元素在垂直方向上取最大值，而不是取和，采用BFC。-->
+  <div id = "p1F">
+    <p id = "p1">SWUST</p>
+  </div>
+  <p id = "p2">SWUST</p>
+</body>
+</html>
