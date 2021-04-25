@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .all{
+      display: flex;
+      flex-direction: row;
+      /*
+       总宽度足够的时候，每个box按照设定的宽度；当总宽度不够的时候，每个box自适应，每个box宽度 = 总宽度/box个数
+      */
+      /*flex-wrap:nowrap;*/
+
+      /*
+      换行，第一行在上方。
+      */
+      flex-wrap:wrap;
+
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+      text-align: center;
+      border: 1px solid silver;
+    }
+  </style>
+</head>
+<body>
+<!--默认情况下，项目都排在一条线（又称"轴线"）上。
+flex-wrap属性定义，如果一条轴线排不下，如何换行。
+-->
+<div class = "all">
+  <div class = "box">1</div>
+  <div class = "box">2</div>
+  <div class = "box">3</div>
+  <div class = "box">4</div>
+  <div class = "box">5</div>
+  <div class = "box">6</div>
+  <div class = "box">7</div>
+  <div class = "box">8</div>
+  <div class = "box">9</div>
+  <div class = "box">10</div>
+  <div class = "box">11</div>
+  <div class = "box">12</div>
+  <div class = "box">13</div>
+  <div class = "box">14</div>
+</div>
+</body>
+</html>

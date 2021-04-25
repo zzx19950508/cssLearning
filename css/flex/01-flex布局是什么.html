@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+      <!--
+      布局的传统解决方案，基于盒状模型，依赖 display 属性 + position属性 + float属性。
+      它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。
+      W3c提供了Flex 布局，可以简便、完整、响应式地实现各种页面布局。
+
+      -->
+
+      <!--任何一个容器都可以被指定为Flex布局。
+      .box{
+         display:flex;
+       }
+       因此，行内元素也可以使用Flex布局
+       .box{
+         display: inline-flex;
+       }
+       Webkit 内核的浏览器，必须加上-webkit前缀。
+       .box{
+        display: -webkit-flex; /* Safari */
+        display: flex;
+}
+      -->
+      <!--
+      特别要注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+      -->
+</body>
+</html>

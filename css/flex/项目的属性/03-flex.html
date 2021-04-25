@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .all{
+      display: flex;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      flex: none;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
+  -->
+<div class="all">
+  <div class="box1 box"></div>
+  <div class="box2 box"></div>
+  <div class="box3 box"></div>
+  <div class="box4 box"></div>
+</div>
+</body>
+</html>
