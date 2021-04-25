@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color:rebeccapurple;
+    }
+    .box1{
+
+    }
+    .box2{
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+
+  </style>
+</head>
+<body>
+  <!--
+    absolute表示，相对于上级元素（一般是父元素）进行偏移，即定位基点是父元素。
+    它有一个重要的限制条件：定位基点（一般是父元素）不能是static定位，否则定位基点就会变成整个网页的根元素html。
+    实质就是其实就是向上找，直到找到一个不是static定位的元素为止，
+    即相对于距离最近的有定位属性（一般是relative）的上级元素（一般是父元素）进行偏移，即定位基点是该上级元素
+    另外，absolute定位也必须搭配top、bottom、left、right这四个属性一起使用。
+  -->
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+
+</body>
+</html>

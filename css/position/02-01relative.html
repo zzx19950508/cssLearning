@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color:rebeccapurple;
+    }
+    .box1{
+      position: relative;
+      top: 30px;
+      left: 100px;
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <!--
+  relative表示，相对于默认位置（即static时的位置，即自己的源位置）进行偏移，即定位基点是元素的默认位置。
+  它必须搭配top、bottom、left、right这四个属性一起使用，用来指定偏移的方向和距离。
+  -->
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box box1"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</body>
+</html>
